@@ -13,10 +13,21 @@
 ### 반복) 입력값의 각 자리 값 더하기 -> 입력값[1]합한값[1] = 출력값
 ### 중지) 입력값 = 출력값
 
-n = input()    #입력값
+n = input()    # 입력값 ex.26
 num = N        # 비교값 
 cycle = 0      # 사이클 값 
 
+while True:
+    a = num//10      #2
+    b = num%10       #6
+    c = (a+b)%10     #8
+    num = (b*10)+c   #60+8=68
+
+    cnt = cnt+1
+    if(num == n):
+        break
+
+print(cnt)
 
 
 
